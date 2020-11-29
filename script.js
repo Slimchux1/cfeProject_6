@@ -34,7 +34,14 @@ let School = {
         
    
         // Sunday
-        SortStudentByName: function(){},
+        SortStudentByName: function(name){
+          let nameSearch = this.student
+              for(let i = 0; i < nameSearch.length; i++) {
+                     if (name === nameSearch[i].name){
+                            return nameSearch[i]
+                     }
+              }
+        },
 
         // michael
         getSchoolAccount: function(){},
